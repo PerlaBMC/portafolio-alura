@@ -1,0 +1,364 @@
+
+* {
+    font-family: "Arima", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+}
+
+header a:hover {
+    color: orchid;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 3%;
+}
+
+.imagen-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 80%;
+    padding: 20px;
+    filter: drop-shadow();
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.imagen-perfil img {
+    border-inline-style: solid;
+    border-inline-width: 10px;
+    animation: mymove 5s infinite;
+}
+
+.presentacion-front-end h1{
+padding: 50px;
+text-align: center;
+font-size: 70px;
+color: black;
+animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {color: whitesmoke;}
+  }
+
+.li-presentacion {
+    font-weight: bolder;
+}
+
+.presentacion-front-end h2{
+ font-size: 30px;
+ padding-left: 50px;
+}
+
+.presentacion-front-end p {
+    padding: 20px 50px; 
+    text-align: justify;
+}
+
+.colorHtml{
+    color: orange;
+    font-weight: bold;
+}
+
+.colorCss{
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.colorJS {
+    color: rgb(231, 231, 36);
+    font-weight: bold
+}
+
+.presentacion-front-end ol{
+    padding: 0 50px;
+    text-align: justify;
+}
+
+.presentacion-front-end li{
+    padding: 10px;
+}
+
+.h2Titulo {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px; 
+    width: 100%; 
+}
+
+.logoSkills {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 10%;
+}
+
+.logoSkills img {
+    width: 8%;
+    animation: logomove 5s infinite;
+}
+
+@keyframes logomove {
+    50% {rotate: y 180deg;}
+  }
+
+.proyectos {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+    flex-wrap: wrap;
+}
+
+.cardProyecto {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px  rgba(213, 212, 212, 0.705);
+}
+
+.cardProyecto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardProyecto button {
+    height: auto;
+    background:     linear-gradient(black, SlateBlue);
+    border-color: aliceblue;
+    margin: -10px 0 20px 0;
+    cursor: pointer;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.cardProyecto button:hover {
+    background: linear-gradient(GhostWhite, LavenderBlush, Lavender);
+    box-shadow: 0px 0px 10px 5px  rgba(213, 212, 212, 0.705);
+}
+
+.cardProyecto a {
+    text-decoration: none;
+    color: lavender;
+}
+
+.cardProyecto a:hover {
+    color: black;
+}
+
+.cardProyecto p {
+   text-align: justify;
+   font-family: "Arima", system-ui;
+   font-weight: 100;
+   font-style: normal;
+}
+
+.certificados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+
+.containerCertificado {
+    width: 20%;
+}
+
+.containerCertificado img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.containerCertificado img:hover{
+    width: 110%;
+}
+
+.acerca-de-mi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.acerca-de-mi p{
+    font-family: "Arima", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    padding: 0 150px 50px 150px;
+    text-align: justify;
+}
+
+.container-acerca-de-mi-galeria {
+    display: grid;
+    grid-template-columns: 25% 22% 22% 25%;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.container-acerca-de-mi-galeria img {
+    width: 100%;
+    height: 300px;
+    filter: grayscale(1);
+}
+
+.container-acerca-de-mi-galeria img:hover {
+    filter: grayscale(0)
+}
+
+.formulario-de-contacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    padding: 5% 10%;
+    background: url("../video/fondoForm.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    color: azure;
+    font-family: "Arima", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.formulario-de-contacto button {
+    border-radius: 10px;
+   background-color: SlateBlue;
+   color: azure;
+   border-color: slateblue;
+}
+
+.formulario-de-contacto button:hover {
+ background-color: DarkSlateBlue;
+}
+
+footer {
+height: 100px;
+background: linear-gradient(LavenderBlush, lavender, Thistle);
+display: flex;
+justify-content: center;
+align-items: center;
+color: blue;
+gap: 10px;
+}
+
+footer a {
+    font-size: large;
+    margin: 0;
+    text-decoration: none;
+    color: darkblue;
+}
+
+@media (max-width: 535px) {
+*{
+    box-sizing: border-box;
+}
+
+main {display: block;
+}
+
+.proyectos{
+    padding: 20px;
+}
+
+.h2Titulo {
+    font-size: 20px;
+}
+
+.cardProyecto {
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 10%;
+}
+
+.cardProyecto img {
+    width: 90%;
+    margin: 20px;
+}
+
+.cardProyecto p{
+    padding: 20px;
+}
+
+.certificados {
+    padding: 0 20px;
+}
+
+.acerca-de-mi p {
+ padding: 20px;
+}
+
+.container-acerca-de-mi-galeria {
+    grid-template-columns: 100%;
+}
+
+form {
+    width: 100%;
+    background-size: auto;
+    gap: 2px;
+}
+  }
+
+  @media (min-width: 536px) and (max-width: 1024px) {
+    main {
+        grid-template-columns: 100%;
+    }
+
+    .presentacion-front-end h1 {
+        padding: 0;
+    }
+
+    .proyectos {
+        padding: 0;
+    }
+    
+    .cardProyecto {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .acerca-de-mi p {
+        padding: 10%
+    }
+
+    .container-acerca-de-mi-galeria {
+        padding: 0 5%;
+    }
+
+    form {
+        width: 100%;
+    }
+  }
